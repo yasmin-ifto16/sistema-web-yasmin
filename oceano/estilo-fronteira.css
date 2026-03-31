@@ -1,0 +1,59 @@
+body {
+    margin: 0 auto; /* centraliza horizontalmente */
+    padding: 40px; /* adiciona espaçamento interno */
+
+    overflow-x: hidden;
+
+    background-image:
+        linear-gradient(
+            to bottom,
+            #00000000,
+            #001a3380,
+            #001020b3,
+            #000000e6
+        ),
+        url("imagens/fossa.jpg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #0a1f2e;
+
+    width: 50%;
+    min-height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza conteúdo interno */
+
+    font-family: Verdana; /* tipo bonitinho */
+    }
+
+
+    footer {
+            color: #e6f7ff;
+            text-align: center;
+        }
+
+        h1 {
+            color: #3a8fb7;
+            font-family: 'Oswald', sans-serif;
+            font-size: 40px;
+        }
+
+        h2 {
+            color: #00a8c6;
+            font-family: 'Oswald', sans-serif;
+            font-size: 30px;
+            text-align: center;
+        }
+
+
+        h3 {
+            color: #4cc9f0;
+        }
+
+        strong {
+            color: #7fd3e6;
+        }
+

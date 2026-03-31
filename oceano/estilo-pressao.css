@@ -1,0 +1,88 @@
+    body {
+    margin: 0 auto; /* centraliza horizontalmente */
+    padding: 40px; /* adiciona espaçamento interno */
+
+    overflow-x: hidden;
+
+    background-image:
+        linear-gradient(
+            to bottom,
+            #00000000,
+            #001a3380,
+            #001020b3,
+            #000000e6
+        ),
+        url("imagens/fossa.jpg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #0a1f2e;
+
+    width: 50%;
+    min-height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza conteúdo interno */
+
+    font-family: Verdana; /* tipo bonitinho */
+    }
+
+    .tabela-press {
+    width: 100%;
+    border-collapse: separate;
+    background-color: #6db8e4c4;
+    margin-top: 10px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    /* Coisa das imagens*/
+
+    .containerPres-imagensPres {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* evita quebrar em telas menores */
+}
+
+    .contrairPres {
+        position: relative;
+        width: 300px; /* todas com mesmo tamanho */
+    }
+
+    .imagensPres {
+        display: block;
+        width: 100%;
+        height: 200px; /* altura igual */
+        object-fit: cover;
+    }
+
+    .escurecer-pres {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #0a1f2e;
+    }
+
+        .contrairPres:hover .escurecer-pres {
+            opacity: 0.8;
+        }
+
+    .texto {
+        color: #7fd3e6;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
